@@ -3067,6 +3067,7 @@ GameObject:
   - component: {fileID: 1700242495}
   - component: {fileID: 1700242497}
   - component: {fileID: 1700242496}
+  - component: {fileID: 1700242498}
   m_Layer: 0
   m_Name: Central Reservation
   m_TagString: Untagged
@@ -3176,6 +3177,60 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!60 &1700242498
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700242494}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 6.874404, y: 1.8721639}
+      - {x: -7.4100122, y: 1.9257509}
+      - {x: -8.186925, y: 1.4049273}
+      - {x: -8.066824, y: -1.4180224}
+      - {x: -7.2889514, y: -2.058065}
+      - {x: 2.1893506, y: -2.0914147}
+      - {x: 2.9597235, y: -1.5720615}
+      - {x: 2.828524, y: 0.88696146}
+      - {x: 6.8898535, y: 0.9464669}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2000420039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,6 +3334,7 @@ GameObject:
   - component: {fileID: 2146124171}
   - component: {fileID: 2146124173}
   - component: {fileID: 2146124172}
+  - component: {fileID: 2146124174}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -3388,6 +3444,62 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!60 &2146124174
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146124170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 9.022241, y: -0.5506079}
+      - {x: 8.916643, y: 3.4974794}
+      - {x: 8.460742, y: 3.952101}
+      - {x: -9.463016, y: 3.8901742}
+      - {x: -10.020773, y: 3.4053478}
+      - {x: -10.127276, y: -3.4060488}
+      - {x: -9.466585, y: -3.8645096}
+      - {x: 3.9726334, y: -4.0858135}
+      - {x: 4.928413, y: -3.6658747}
+      - {x: 4.974838, y: -1.0462912}
+      - {x: 8.056849, y: -1.0542336}
+  m_UseDelaunayMesh: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
