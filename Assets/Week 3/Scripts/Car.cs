@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Car : MonoBehaviour
 {
     Rigidbody2D rigidbody;
+    public GameObject spill;
+    public GameObject arrow;
     float acceleration;
     float steering;
-    public float forwardSpeed = 300;
-    public float steeringSpeed = 30;
+    public float forwardSpeed = 600;
+    public float steeringSpeed = 40;
     public float maxSpeed = 1000;
     // Start is called before the first frame update
     void Start()
@@ -31,5 +34,17 @@ public class Car : MonoBehaviour
         {
             rigidbody.AddForce(force);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D spill)
+    {
+        forwardSpeed = 50;
+        steeringSpeed = 10;
+    }
+
+    private void OnTriggerExit2D(Collider2D spill)
+    {
+        forwardSpeed = 600;
+        steeringSpeed = 40;
     }
 }
