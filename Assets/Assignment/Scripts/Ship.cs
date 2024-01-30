@@ -9,6 +9,8 @@ public class Ship : MonoBehaviour
     float steering;
     public float forwardSpeed = 600;
     public float steeringSpeed = 40;
+    public GameObject laserPrefab;
+    public Transform Spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,10 @@ public class Ship : MonoBehaviour
     {
         acceleration = Input.GetAxis("Vertical");
         steering = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(laserPrefab, Spawn.position, Spawn.rotation);
+        }
     }
     private void FixedUpdate()
     {
